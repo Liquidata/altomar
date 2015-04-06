@@ -73,7 +73,7 @@
                 <li><a id="menu_receitas"><?php echo $labels["menu_receitas"]; ?></a></li>
                 <li class="last"><a id="menu_ondeestamos"><?php echo $labels["menu_ondeEstamos"]; ?></a></li>
             </ul>
-            <div><img src="assets/images/menu2.png"></div>
+            <div><img id="menu2" src="assets/images/menu2.png"><img id="menu2mobile" src="assets/images/menu2_mobile.png"></div>
 
         </div>
     </header>
