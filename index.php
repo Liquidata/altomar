@@ -20,7 +20,7 @@
 <html>
 <head lang="pt">
     <meta charset="UTF-8">
-    <title>Alto Mar Dev</title>
+    <title>Alto Mar</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -60,9 +60,10 @@
                 <li><a href="?l=es">ESP</a></li>
             </ul>
         </div>
-        <div class="top-right-menu">
-            <ul>
-                <li class="header"><?php echo $labels["menu_title"]; ?></li>
+        <div class="top-right-menu link" id="menuArea" >
+            <div class="header" id="menuTitle"><?php echo $labels["menu_title"]; ?></div>
+            <ul id="menuList" hidden>
+
                 <li><a id="menu_altomar">Alto Mar</a></li>
                 <li><a id="menu_noticias"><?php echo $labels["menu_noticias"]; ?></a></li>
                 <li><a id="menu_bacalhau"><?php echo $labels["menu_bacalhau"]; ?></a></li>
@@ -70,21 +71,24 @@
                 <li><a id="menu_produtos"><?php echo $labels["menu_produtos"]; ?></a></li>
                 <li><a id="menu_encomendas"><?php echo $labels["menu_encomendas"]; ?></a></li>
                 <li><a id="menu_receitas"><?php echo $labels["menu_receitas"]; ?></a></li>
-                <li><a id="menu_ondeestamos"><?php echo $labels["menu_ondeEstamos"]; ?></a></li>
+                <li class="last"><a id="menu_ondeestamos"><?php echo $labels["menu_ondeEstamos"]; ?></a></li>
             </ul>
+            <div><img src="assets/images/menu2.png"></div>
+
         </div>
     </header>
 
     <a name="altomar"></a>
-    <section class="altomar sectionMenu">
+    <section class="altomar sectionGrey">
 
         <div class="container">
 
             <div class="row text-center">
-                <h1 class="title"><?php echo $labels["altomar_title"]; ?></h1>
-                <p><?php echo $labels["altomar_subtitle"]; ?></p>
-                <div class="button" id="grp_altomar"><a id="btn_altomar"><?php echo $labels["global_viewMore"]; ?></a></div>
-                <div class="button" id="grp_altomar_close" hidden><a id="btn_altomar_close"><?php echo $labels["global_viewLess"]; ?></a></div>
+                <div class="jumbotron jumboWhite">
+                    <h2><?php echo $labels["title1"]; ?></h2>
+                </div>
+                <div class="button buttonGrey" id="grp_altomar"><a id="btn_altomar"><?php echo $labels["global_viewMore"]; ?></a></div>
+                <div class="button buttonGrey" id="grp_altomar_close" hidden><a id="btn_altomar_close"><?php echo $labels["global_viewLess"]; ?></a></div>
             </div>
         </div>
     </section>
@@ -92,11 +96,6 @@
     <div id="content_altomar" hidden>
         <section>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="jumbotron jumboWhite">
-                        <h2><?php echo $labels["title1"]; ?></h2>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="jumbotron jumboDate">
                         <h3><?php echo $labels["desde_title"][0]; ?></h3>

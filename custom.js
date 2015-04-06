@@ -96,6 +96,9 @@ $(document).on( 'scroll', function(){
 
 $('.scroll-top-wrapper').on('click', scrollToTop);
 
+$("#menuArea").click(function() {
+    $("#menuList").slideToggle(800);
+});
 
 $("#btn_altomar").click(function() {
     activate("altomar");

@@ -22,8 +22,7 @@
 
     $labels["fish2_text"] = "<p>Em 2005 a Altomar Lda. passou a Altomar S.A. (sociedade anónima). A Altomar S.A. continuará a apostar em fornecedores no estrangeiro com bom produto e numa transformação deste com vista a obter o bacalhau com boa qualidade e preço, a que já habituou os seus clientes.</p><p>A Altomar S.A é constituída por pessoal especializado e inovador, que certamente trará mais-valias que lhe permitirá encarar o futuro com esperança e confiança, apostando na internacionalização mas não descurando o mercado nacional.</p><p>Para além de Portugal continental, a Altomar vende ainda para os arquipélagos da Madeira e dos Açores e exporta para Angola, Moçambique, Cabo Verde, França, Holanda, Espanha.</p>";
 
-    $labels["altomar_title"] = "Alto Mar";
-    $labels["altomar_subtitle"] = "Mais do que um produto,<br>a tradição de um povo";
+    $labels["altomar_title"] = "Mais do que um produto,<br>a tradição de um povo";
 
 
     $labels["noticias_title"] = "Notícias";
