@@ -414,7 +414,8 @@ body {
     /* LOGO */
     .top-left-logo img
     {
-        width:100px;
+        margin-top: 80px;
+
     }
     /* MENU MOBILE */
     .top-right-menu {
