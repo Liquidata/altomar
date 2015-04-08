@@ -411,7 +411,11 @@ body {
 }
 @media screen and (max-width: 1200px) {
 
-
+    /* LOGO */
+    .top-left-logo img
+    {
+        width:100px;
+    }
     /* MENU MOBILE */
     .top-right-menu {
         width:108px;
