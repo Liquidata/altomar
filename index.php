@@ -1,12 +1,14 @@
 <?php
-
+    $language = "pt";
     if (isset($_REQUEST["l"])) {
         switch ($_REQUEST["l"]) {
             case "en":
                 require "assets/languages/english.php";
+                $language = "en";
                 break;
             case "es":
                 require "assets/languages/spanish.php";
+                $language = "es";
                 break;
             default:
                 require "assets/languages/portuguese.php";
@@ -94,55 +96,7 @@
     </section>
 
     <div id="content_altomar" hidden>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="jumbotron jumboDate">
-                        <h3><?php echo $labels["desde_title"][0]; ?></h3>
-                        <h1><span><?php echo $labels["desde_title"][1]; ?></span></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="container desde">
-                <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2 text">
-                        <?php echo $labels["desde_text"]; ?>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section class="fish">
-            <img src="./assets/images/fish_background.jpg">
-        </section>
-
-        <section class="fish-text">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2 text">
-                        <?php echo $labels["fish_text"]; ?>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="fish2">
-            <img src="./assets/images/fish2_background.jpg">
-        </section>
-
-        <section class="fish2-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2 text">
-                        <?php echo $labels["fish2_text"]; ?>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php require_once "contents/altomar_pt.html"; ?>
     </div>
 
     <a name="noticias"></a>
@@ -157,6 +111,10 @@
         </div>
     </section>
 
+    <div id="content_noticias" hidden>
+        <?php require_once "contents/noticias_" . $language . ".html"; ?>
+    </div>
+
     <a name="bacalhau"></a>
     <section class="bacalhau sectionMenu">
         <div class="container">
@@ -167,6 +125,10 @@
             </div>
         </div>
     </section>
+
+    <div id="content_bacalhau" hidden>
+        <?php require_once "contents/bacalhau_" . $language . ".html"; ?>
+    </div>
 
     <a name="comopreparamos"></a>
     <section class="comopreparamos sectionMenu">
@@ -179,6 +141,10 @@
         </div>
     </section>
 
+    <div id="content_comopreparamos" hidden>
+        <?php require_once "contents/comopreparamos_" . $language . ".html"; ?>
+    </div>
+
     <a name="produtos"></a>
     <section class="produtos sectionMenu sectionBlack">
         <div class="container">
@@ -189,6 +155,10 @@
             </div>
         </div>
     </section>
+
+    <div id="content_produtos" hidden>
+        <?php require_once "contents/produtos_" . $language . ".html"; ?>
+    </div>
 
     <a name="encomendas"></a>
     <section class="encomendas sectionMenu sectionGrey">
@@ -201,6 +171,10 @@
         </div>
     </section>
 
+    <div id="content_encomendas" hidden>
+        <?php require_once "contents/encomendas_" . $language . ".html"; ?>
+    </div>
+
     <a name="receitas"></a>
     <section class="receitas sectionMenu">
         <div class="container">
@@ -212,6 +186,10 @@
         </div>
     </section>
 
+    <div id="content_receitas" hidden>
+        <?php require_once "contents/receitas_" . $language . ".html"; ?>
+    </div>
+
     <a name="ondeestamos"></a>
     <section class="ondeestamos sectionMenu">
         <div class="container">
@@ -222,6 +200,10 @@
             </div>
         </div>
     </section>
+
+    <div id="content_ondeestamos" hidden>
+        <?php require_once "contents/ondeestamos_" . $language . ".html"; ?>
+    </div>
 
     <section class="footer">
         <div class="container-fluid">

@@ -1,7 +1,7 @@
 /**
  * Created by Francisco on 03-04-2015.
  */
-
+console.log("CUSTOM");
 function scrollToAnchor(aid){
     var aTag = $("a[name='"+ aid +"']");
 

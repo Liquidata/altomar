@@ -252,7 +252,7 @@ body {
 /* FISH */
 /********************************************* */
 
-.fish img {
+.horizontalImage img {
     width:100%;
     min-height:200px;
 }
@@ -268,10 +268,6 @@ body {
 /* FISH 2 */
 /********************************************* */
 
-.fish2 img {
-    width:100%;
-    min-height:200px;
-}
 
 .fish2-text {
     padding:60px 0px;
